@@ -81,6 +81,7 @@
 	     	<a href="#"class="btn btn-warning">Login</a>
 	     	
 	     	<a href="{% url 'cart' %}">
+				 
 	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
 	    	</a>
 	    	<p id="cart-total">{{cartItems}}</p>
@@ -88,11 +89,16 @@
 	    </div>
 	  </div>
 	</nav>
-
      <div class="container">
 		 <div class="jumbotron bg-info text-center">
-			<img  id="cart-icon" class="img-logo" src="{% static 'images/llogo.jpeg' %}" >
-			 <h1>Denim Products</h1>
+			 <div class="row">
+				 <div class="col-md-6">
+					<img  src="{% static 'images/llogo.jpeg' %}" alt="" srcset=""> 
+				 </div>
+				 <div class="col-md-6">
+					<h1>Kitale Denim Products</h1>
+				</div>				
+			 </div>			
 		 </div>
             <br>
             {% block content %}

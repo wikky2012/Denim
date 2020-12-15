@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #cart-icon{
-	width:25px;
+	widows: 250px;
 	display: inline-block;
     margin-left: 15px;
     background-color: transparent;
@@ -54,10 +54,10 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 50%;
 	font-size: 14px;
 }
-.img-logo{
+/* .img-logo{
 	width: 200px;
 	height: 250px;
-}
+} */
 .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
 	margin-top: 10px;
 }

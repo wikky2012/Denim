@@ -15,7 +15,7 @@ class Customer(models.Model):
 class Product(models.Model):
 	name = models.CharField(max_length=200)
 	price = models.FloatField()
-	digital = models.BooleanField(default=False,null=True, blank=True)
+	kenya = models.BooleanField(default=False,null=True, blank=True)
 	image = models.ImageField(null=True, blank=True)
 
 	def __str__(self):
@@ -43,7 +43,7 @@ class Order(models.Model):
 		shipping = False
 		orderitems = self.orderitem_set.all()
 		for i in orderitems:
-			if i.product.digital == False:
+			if i.product.kenya == False:
 				shipping = True
 		return shipping
 
